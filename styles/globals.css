@@ -7,3 +7,15 @@
 .font-palette {
   font-family: 'Palette Mosaic';
 }
+
+.bg-grass {
+  background-image: url('../public/grass-bg.png');
+}
+
+.bg-wood {
+  background-image: url('../public/bg-wood.png');
+}
+
+.bg-water {
+  background-image: url('../public/bg-water.png');
+}
