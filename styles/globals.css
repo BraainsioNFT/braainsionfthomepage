@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -18,4 +20,8 @@
 
 .bg-water {
   background-image: url('../public/bg-water.png');
+}
+
+.font-title {
+  font-family: 'Acme';
 }
