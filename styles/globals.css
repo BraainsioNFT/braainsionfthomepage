@@ -22,6 +22,109 @@
   background-image: url('../public/bg-water.png');
 }
 
+.bg-cracked {
+  background-image: url('../public/bg-cracked.png');
+}
+
+.bg-redstroke {
+  background-image: url('../public/red-stroke.png');
+  background-size: 90% 100%;
+  background-position: 50% 50%;
+}
+.bg-greenstroke {
+  background-image: url('../public/red-stroke.png');
+  background-size: 90% 100%;
+  background-position: 50% 50%;
+  filter: hue-rotate(90deg)
+}
+.bg-bluestroke {
+  background-image: url('../public/red-stroke.png');
+  background-size: 90% 100%;
+  background-position: 50% 50%;
+  filter: hue-rotate(180deg)
+}
+.bg-graystroke {
+  background-image: url('../public/red-stroke.png');
+  background-size: 90% 100%;
+  background-position: 50% 50%;
+  filter: grayscale()
+}
+
 .font-title {
   font-family: 'Acme';
+}
+
+.fade-in {
+  animation: fade 0.9s ease-in;
+}
+
+.fly-in-bottom {
+  animation: fly-in-bottom 0.3s ease-in;
+}
+
+.fly-in-bottom-fade {
+  animation: fade 0.3s ease-in,
+  fly-in-bottom 0.3s ease-in;
+}
+
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fly-in-bottom {
+  0% {
+    transform: translateY(250px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.grow-to-min {
+  transition: height .15s ease-in
+}
+
+.scroll-blue::-webkit-scrollbar-track
+{
+	background-color: #f5f5f50e;
+}
+
+.scroll-blue::-webkit-scrollbar
+{
+	width: 10px;
+}
+
+.scroll-blue::-webkit-scrollbar-thumb
+{
+	background-color: #00000000;	
+}
+
+/* ANIM CANVAS */
+.anim-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../public/images/bg.png");
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#animatedBackground {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: static;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.anim-bg .animatedBackgroundCharacterImage>img {
+  display: none;
 }
