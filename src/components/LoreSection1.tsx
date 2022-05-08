@@ -6,7 +6,10 @@ export const LoreSection1: FC = () => {
       id="lore"
       className="flex flex-col 2xl:flex-row justify-center items-center p-20"
     >
-      <div className="grid grid-rows-3 grid-cols-3 gap-3 w-full max-w-[700px] m-10">
+      <div
+        className="grid grid-rows-3 grid-cols-3 gap-3 w-full max-w-[700px] m-10"
+        data-aos="fade-right"
+      >
         <img src="/nfts/0.png" alt="nft-0" className="rounded-xl" />
         <img src="/nfts/1.png" alt="nft-1" className="rounded-xl" />
         <img src="/nfts/2.png" alt="nft-2" className="rounded-xl" />
@@ -17,7 +20,7 @@ export const LoreSection1: FC = () => {
         <img src="/nfts/7.png" alt="nft-7" className="rounded-xl" />
         <img src="/nfts/8.png" alt="nft-8" className="rounded-xl" />
       </div>
-      <div>
+      <div data-aos="fade-left">
         <h1 className="text-6xl font-bold font-acme">Survive With Style</h1>
         <div className="p-10 w-full max-w-[800px] rounded-3xl bg-gray-900 drop-shadow-xl mt-5">
           <p className="text-2xl">

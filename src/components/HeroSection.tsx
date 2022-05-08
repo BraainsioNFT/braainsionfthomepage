@@ -3,8 +3,8 @@ import { FaDiscord, FaGamepad } from "react-icons/fa";
 
 export const HeroSection: FC = () => {
   return (
-    <section className="relative flex flex-col items-center bg-grass">
-      <div className="flex flex-col m-10 max-w-[768px]">
+    <section className="relative flex flex-col items-center bg-grass min-h-screen">
+      <div className="flex flex-col m-32 max-w-[768px]">
         <img src="/braains-logo.png" alt="Braains.io Logo" className="w-full" />
         <img src="/subtitle.png" alt="Subtitle" className="w-full" />
       </div>

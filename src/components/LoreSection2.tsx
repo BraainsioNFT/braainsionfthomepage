@@ -3,7 +3,10 @@ import { FC, useState } from "react";
 export const LoreSection2: FC = () => {
   const [hover, setHover] = useState(false);
   return (
-    <section className="flex flex-col 2xl:flex-row-reverse justify-center items-center p-20">
+    <section
+      className="flex flex-col 2xl:flex-row-reverse justify-center items-center p-20"
+      data-aos="fade-up"
+    >
       <div className="w-full max-w-[700px] m-10 relative flex flex-col items-center justify-center">
         <div
           className={`absolute ${

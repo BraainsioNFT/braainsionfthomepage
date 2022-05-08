@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
-import { Character, draw, load, resize } from "../pages/scripts/character";
+
+import { draw } from "../pages/scripts/character";
 
 type CanvasProps = {};
 
