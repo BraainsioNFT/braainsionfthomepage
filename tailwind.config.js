@@ -1,19 +1,16 @@
-const daisyui = require('daisyui');
-const textshadow = require('tailwindcss-textshadow')
-
 module.exports = {
+  content: ["./src/**/*{ts,tsx}"],
   theme: {
     extend: {
       colors: {
-        'discord-blue-100': '#7289da',
-        'discord-blue-200': '#6579c2'
+        "discord-blue-100": "#7289da",
+        "discord-blue-200": "#6579c2",
       },
-      screens: {
-        
-      }
+      fontFamily: {
+        acme: ["Acme", "sans-serif"],
+        palette_mosaic: ["Palette Mosaic", "sans-serif"],
+      },
     },
   },
-  plugins: [daisyui, textshadow],
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-}
+  plugins: [require("daisyui")],
+};
