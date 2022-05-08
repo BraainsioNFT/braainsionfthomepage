@@ -55,7 +55,7 @@ export const LoreSection2: FC = () => {
       </div>
       <div>
         <h1 className="text-6xl font-bold font-acme">The Outbreak</h1>
-        <div className="p-10 w-full max-w-[800px] rounded-3xl bg-gray-900 drop-shadow-xl mt-5">
+        <div className="p-10 w-full max-w-[800px] rounded-3xl bg-gray-900 mt-5 shadow-drop">
           <p className="text-2xl">
             When the outbreak inevitably occurred, the remaining healthy
             survivors sought refuge inside the houses. They used what little

@@ -10,7 +10,7 @@ export const HeroSection: FC = () => {
       </div>
 
       <div className="w-full p-10 flex justify-center z-10">
-        <div className="w-full md:flex md:w-[1100px] md:h-[600px] rounded-3xl overflow-hidden">
+        <div className="w-full md:flex md:w-[1100px] md:h-[600px] rounded-3xl overflow-hidden shadow-3xl">
           <div className="flex flex-col items-center justify-between flex-1 p-10 bg-teal-900">
             <img
               src="/image2vector.svg"
@@ -59,7 +59,11 @@ export const HeroSection: FC = () => {
         </div>
       </div>
 
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute bottom-0">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        className="absolute bottom-0"
+      >
         <path
           fill="#10756e"
           d="M0,128L60,117.3C120,107,240,85,360,85.3C480,85,600,107,720,122.7C840,139,960,149,1080,149.3C1200,149,1320,139,1380,133.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
