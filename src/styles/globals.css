@@ -12,19 +12,19 @@
 }
 
 .bg-grass {
-  background-image: url("/grass-bg.png");
+  background-image: url("grass-bg.png");
 }
 
 .bg-wood {
-  background-image: url("/bg-wood.png");
+  background-image: url("bg-wood.png");
 }
 
 .bg-water {
-  background-image: url("/bg-water.png");
+  background-image: url("bg-water.png");
 }
 
 .bg-cracked {
-  background-image: url("/bg-cracked.png");
+  background-image: url("bg-cracked.png");
 }
 
 /* ANIM CANVAS */
@@ -33,7 +33,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/bg.png");
+  background-image: url("bg.png");
   overflow: hidden;
   height: 100%;
   width: 100%;
