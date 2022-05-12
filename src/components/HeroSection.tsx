@@ -6,18 +6,18 @@ export const HeroSection: FC = () => {
   return (
     <section className="relative flex flex-col items-center bg-grass min-h-screen">
       <Canvas />
-      <div className="flex flex-col m-32 max-w-[768px] z-30">
+      <div className="flex flex-col m-20 max-w-[768px] z-30">
         <img src="/braains-logo.png" alt="Braains.io Logo" className="w-full" />
         <img src="/subtitle.png" alt="Subtitle" className="w-full" />
       </div>
 
       <div className="w-full p-10 flex justify-center z-30">
-        <div className="w-full md:flex md:w-[1100px] md:h-[600px] rounded-3xl overflow-hidden shadow-3xl">
+        <div className="w-full md:flex md:w-[800px] md:h-[450px] rounded-3xl overflow-hidden shadow-3xl">
           <div className="flex flex-col items-center justify-between flex-1 p-10 bg-teal-900">
             <img
               src="/image2vector.svg"
               alt="example nft"
-              className="rounded-full border-4 border-slate-700 mt-10 p-3 w-48 bg-slate-800"
+              className="rounded-full border-4 border-slate-700 mt-10 p-3 w-44 bg-slate-800"
             />
 
             <h1 className="mt-5 font-bold text-lg">
@@ -49,7 +49,7 @@ export const HeroSection: FC = () => {
             <img
               src="/nftgif.gif"
               alt="example nft"
-              className="mt-10 border-4 border-teal-800 w-48 bg-teal-900 rounded-full"
+              className="mt-10 border-4 border-teal-800 w-44 bg-teal-900 rounded-full"
             />
             <div className="w-full flex flex-col items-center">
               <h2 className="mt-5">Something here</h2>

@@ -62,7 +62,7 @@ function Canvas() {
   }, [draw]);
 
   return (
-    <div ref={animatedBackgroundContainerRef} className="absolute z-20 h-full w-full">
+    <div ref={animatedBackgroundContainerRef} className="absolute z-10 h-full w-full">
       <canvas ref={canvasRef} id="canvas" tabIndex={0} aria-label="Second Brain">Alternative content describing what the canvas displays.</canvas>
       <div ref={animatedBackgroundCharacterImagesRef}>
         <img src="/images/zombie.png" className="hidden"></img>
