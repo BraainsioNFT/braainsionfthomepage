@@ -7,7 +7,6 @@ import { LoreSection3 } from "../components/LoreSection3";
 import { PartnerSection } from "../components/PartnerSection";
 import { RoadmapSection } from "../components/RoadmapSection";
 import { TeamSection } from "../components/TeamSection";
-import Canvas from "../components/Canvas";
 
 import type { NextPage } from "next";
 const Home: NextPage = () => {
