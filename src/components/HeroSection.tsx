@@ -4,7 +4,10 @@ import Canvas from "./Canvas";
 
 export const HeroSection: FC = () => {
   return (
-    <section className="relative flex flex-col items-center bg-grass min-h-screen">
+    <section
+      className="relative flex flex-col items-center min-h-screen"
+      style={{ backgroundImage: "url(grass-bg.png)" }}
+    >
       <Canvas />
       <div className="flex flex-col m-20 max-w-[768px] z-30">
         <img src="braains-logo.png" alt="Braains.io Logo" className="w-full" />
