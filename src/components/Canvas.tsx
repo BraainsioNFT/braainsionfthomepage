@@ -3,12 +3,15 @@
 import React, { useEffect, useRef } from "react";
 import Character from "../structures/Character";
 import { draw, load } from "../util";
+import useWindowSize from "../util/useWindowSize";
 
 function Canvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const canvasContextRef = useRef<CanvasRenderingContext2D | null>(null);
   const animatedBackgroundContainerRef = useRef<HTMLDivElement>(null);
   const animatedBackgroundCharacterImagesRef = useRef<HTMLDivElement>(null);
+
+  const size = useWindowSize();
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -33,7 +36,7 @@ function Canvas() {
       animatedBackgroundCharacterImages;
 
     load();
-  }, []);
+  }, [size]);
 
   useEffect(() => {
     // At this point the canvas should be accessible through the ref
@@ -76,15 +79,16 @@ function Canvas() {
         id="canvas"
         tabIndex={0}
         aria-label="Second Brain"
+        className="w-full h-full"
       >
         Alternative content describing what the canvas displays.
       </canvas>
       <div ref={animatedBackgroundCharacterImagesRef}>
-        <img src="/zombie.png" className="hidden"></img>
-        <img src="/blueman.png" className="hidden"></img>
-        <img src="/hitman.png" className="hidden"></img>
-        <img src="/soldier.png" className="hidden"></img>
-        <img src="/survivor.png" className="hidden"></img>
+        <img src="zombie.png" className="hidden"></img>
+        <img src="blueman.png" className="hidden"></img>
+        <img src="hitman.png" className="hidden"></img>
+        <img src="soldier.png" className="hidden"></img>
+        <img src="survivor.png" className="hidden"></img>
       </div>
     </div>
   );

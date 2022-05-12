@@ -6,7 +6,7 @@ export const PartnerSection: FC = () => {
       <h1 className="text-6xl font-bold font-acme">Partners</h1>
       <div className="mt-10 transition hover:scale-105">
         <a href="https://modd.io" target="_blank" rel="noreferrer">
-          <img src="/moddio-logo.png" alt="modd.io" className="w-full" />
+          <img src="moddio-logo.png" alt="modd.io" className="w-full" />
         </a>
       </div>
     </section>

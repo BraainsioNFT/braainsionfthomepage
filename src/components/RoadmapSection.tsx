@@ -16,7 +16,7 @@ export const RoadmapSection: FC = () => {
             <BsCircle className="mt-3 mx-auto opacity-100 text-discord-blue-200" />
             <div className="flex">
               <div className="w-1/2 p-10">
-                <img src="/aman2.png" alt="" className="w-56" />
+                <img src="aman2.png" alt="" className="w-56" />
               </div>
               <div className="w-1/2 p-10 border-l-2 border-discord-blue-200 text-left prose">
                 <h1>Initial Mint</h1>
