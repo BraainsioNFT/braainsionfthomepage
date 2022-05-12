@@ -1,16 +1,18 @@
 import { FC } from "react";
 import { FaDiscord, FaGamepad } from "react-icons/fa";
+import Canvas from "./Canvas";
 
 export const HeroSection: FC = () => {
   return (
     <section className="relative flex flex-col items-center bg-grass min-h-screen">
-      <div className="flex flex-col my-20 max-w-[500px]">
+      <Canvas />
+      <div className="flex flex-col m-32 max-w-[768px] z-30">
         <img src="/braains-logo.png" alt="Braains.io Logo" className="w-full" />
         <img src="/subtitle.png" alt="Subtitle" className="w-full" />
       </div>
 
-      <div className="w-full p-10 flex justify-center z-10">
-        <div className="w-full md:flex md:w-[800px] md:h-[500px] rounded-3xl overflow-hidden shadow-3xl">
+      <div className="w-full p-10 flex justify-center z-30">
+        <div className="w-full md:flex md:w-[1100px] md:h-[600px] rounded-3xl overflow-hidden shadow-3xl">
           <div className="flex flex-col items-center justify-between flex-1 p-10 bg-teal-900">
             <img
               src="/image2vector.svg"
@@ -62,7 +64,7 @@ export const HeroSection: FC = () => {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
-        className="absolute bottom-0"
+        className="absolute bottom-0 z-20"
       >
         <path
           fill="#10756e"

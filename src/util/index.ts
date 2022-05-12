@@ -1,0 +1,2 @@
+export { getVelocityComponents, radToDeg, degToRad, randomBetween, randomCharacterImage, spawnCharacters, valueFromRangeToRange, smallestCanvasDimension } from './anim-canvas-helper';
+export { draw, resize, load } from './anim-canvas-exec';
