@@ -48,7 +48,7 @@ export const LoreSection2: FC = () => {
         <img
           src="/image2vector.svg"
           alt="Gentleman"
-          className="w-full drop-shadow-2xl"
+          className="w-full drop-shadow-2xl hover:animate-pulse"
           onMouseOver={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
         />

@@ -10,7 +10,7 @@ export const LoreSection3: FC = () => {
         <h1 className="text-6xl font-bold font-acme" data-aos="fade-up">
           Will you be one of the few remaining survivors?
         </h1>
-        <h1 className="text-6xl font-bold font-acme mt-64" data-aos="fade-up">
+        <h1 className="text-6xl font-bold font-acme mt-64 mb-52" data-aos="fade-up">
           Will you survive with style?
         </h1>
       </div>

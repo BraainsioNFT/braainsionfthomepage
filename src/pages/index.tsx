@@ -13,7 +13,7 @@ const Home: NextPage = () => {
   return (
     <>
       <HeroSection />
-      <div className="bg-gradient-to-b from-teal-700 to-slate-700">
+      <div className="bg-gradient-to-b from-teal-700 to-slate-700 overflow-x-hidden">
         <LoreSection1 />
         <LoreSection2 />
         <LoreSection3 />
