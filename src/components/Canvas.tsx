@@ -84,11 +84,21 @@ function Canvas() {
         Alternative content describing what the canvas displays.
       </canvas>
       <div ref={animatedBackgroundCharacterImagesRef}>
-        <img src="zombie.png" className="hidden"></img>
-        <img src="blueman.png" className="hidden"></img>
-        <img src="hitman.png" className="hidden"></img>
-        <img src="soldier.png" className="hidden"></img>
-        <img src="survivor.png" className="hidden"></img>
+        <img src="22.png" className="hidden"></img>
+        <img src="30.png" className="hidden"></img>
+        <img src="45.png" className="hidden"></img>
+        <img src="64.png" className="hidden"></img>
+        <img src="111.png" className="hidden"></img>
+        <img src="126.png" className="hidden"></img>
+        <img src="143.png" className="hidden"></img>
+        <img src="184.png" className="hidden"></img>
+        <img src="189.png" className="hidden"></img>
+        <img src="taro10.png" className="hidden"></img>
+        <img src="taro24.png" className="hidden"></img>
+        <img src="taro39.png" className="hidden"></img>
+        <img src="taro102.png" className="hidden"></img>
+        <img src="taro154.png" className="hidden"></img>
+        <img src="taro192.png" className="hidden"></img>
       </div>
     </div>
   );

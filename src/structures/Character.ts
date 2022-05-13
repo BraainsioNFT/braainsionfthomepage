@@ -7,9 +7,8 @@ export default class Character {
 	static animatedBackgroundContainer: HTMLDivElement;
 	static animatedBackgroundCharacterImages: HTMLImageElement[];
 
-	numCharacters = 5;
   characterRadius = 0.025;
-	characterMaxSpeed = 0.0015;
+	characterMaxSpeed = 0.001;
 	characterAcceleration = 0.002;
 
 	context: CanvasRenderingContext2D | null;
