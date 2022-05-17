@@ -4,7 +4,7 @@ import { GiRaiseZombie } from "react-icons/gi";
 
 export const FooterSection: FC = () => {
   return (
-    <footer className="flex justify-center p-10">
+    <footer className="p-10 flex justify-center bg-slate-900">
       <div className="w-[768px] flex justify-between">
         <div>
           <GiRaiseZombie size={100} />

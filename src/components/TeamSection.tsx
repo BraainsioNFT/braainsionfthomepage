@@ -4,9 +4,9 @@ import { TeamCard } from "./TeamCard";
 
 export const TeamSection: FC = () => {
   return (
-    <section className="flex flex-col justify-center items-center p-20 bg-gray-900">
+    <section className="p-10 flex flex-col justify-center items-center bg-gray-900">
       <h1 className="text-6xl font-bold font-acme">Team</h1>
-      <div className="mt-10 max-w-[1000px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="mt-10 grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <TeamCard
           name="Qing Agar"
           img="qingagar.png"

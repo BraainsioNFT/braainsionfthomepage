@@ -7,7 +7,7 @@ export const LoreSection2: FC = () => {
       className=" p-10 flex flex-col lg:flex-row-reverse justify-center items-center"
       data-aos="fade-up"
     >
-      <div className="w-full max-w-[500px] m-10 relative flex flex-col items-center justify-center">
+      <div className="w-full max-w-[500px] m-10 relative flex flex-col items-center justify-center" >
         <div
           className={`absolute ${
             hover ? "opacity-100" : "opacity-0"
@@ -56,14 +56,14 @@ export const LoreSection2: FC = () => {
       <div>
         <h1 className="text-6xl font-bold font-acme">The Outbreak</h1>
         <div className="p-10 w-full max-w-[800px] rounded-3xl bg-gray-900 mt-5 shadow-drop">
-          <p className="text-2xl">
-            When the outbreak inevitably occurred, the remaining healthy
+          <p className="text-lg">
+            {/* When the outbreak inevitably occurred, the remaining healthy
             survivors sought refuge inside the houses. They used what little
             they had left: spare weapons, spare furniture, anything to defend
             themselves with only one goal: to survive. If the zombies broke
             through, it would be over for all of them...
             <br />
-            <br />
+            <br /> */}
             It would only be the survivors with the most wit and intelligence
             that would survive. Their skills increased significantly; survival
             became a simple game to them, a game of style.

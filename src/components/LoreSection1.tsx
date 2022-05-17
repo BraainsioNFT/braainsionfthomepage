@@ -23,18 +23,18 @@ export const LoreSection1: FC = () => {
       <div data-aos="fade-left">
         <h1 className="text-6xl font-bold font-acme">Survive With Style</h1>
         <div className="p-10 w-full max-w-[800px] rounded-3xl bg-gray-900 drop-shadow-xl mt-5 shadow-drop">
-          <p className="text-2xl">
+          <p className="text-lg">
             As the world fell into darkness, the remaining survivors banded
             together in an attempt to stay safe from the waves of zombies,
             eventually taking shelter near two houses that they would come to
             hate...
-            <br />
+            {/* <br />
             <br />
             Little did they know, along the journey, many people had gotten
             infected by the virus that had ravaged civilization...
             <br />
             <br />
-            Unaware of the danger that awaited them, their fate was unknown...
+            Unaware of the danger that awaited them, their fate was unknown... */}
           </p>
         </div>
       </div>

@@ -11,11 +11,11 @@ export const TeamCard: FC<Props> = ({ name, img, role, description }) => {
   const [hover, setHover] = useState(false);
   return (
     <div
-      className="w-72 flex flex-col items-center p-3"
+      className="w-56 flex flex-col items-center p-3"
       data-aos="zoom-in-left"
     >
       <div
-        className="w-64 h-64 mask mask-hexagon hover:rotate-45 transition overflow-hidden shadow-drop"
+        className="w-full mask mask-hexagon hover:rotate-45 transition overflow-hidden shadow-drop"
         onMouseOver={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
       >
