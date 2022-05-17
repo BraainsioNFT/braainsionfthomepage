@@ -38,7 +38,7 @@ export const RoadmapSection: FC = () => {
     >
       <h1 className="text-6xl font-bold font-acme">Roadmap</h1>
       <div className="w-full flex justify-center items-center">
-        <div className={`mt-10 ${disp === 0? "grid grid-cols-1 lg:grid-cols-2" : "h-[600px]"}`}>
+        <div className={`mt-10 ${disp === 0? "grid grid-cols-1 lg:grid-cols-2" : "h-[560px]"}`}>
           <div className={hideConditionally(1)} onMouseOver={() => {
             setHover(1);
           }} onMouseLeave={() => {
