@@ -25,7 +25,6 @@ export function randomCharacterImage() {
 }
 export function spawnCharacters(
   numCharacters: number): Character[] {
-		console.count('spawned ');
   [...new Array(numCharacters)].map(() =>
     Character.characters.push(new Character())
   );

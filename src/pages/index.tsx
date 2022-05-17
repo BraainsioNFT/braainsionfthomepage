@@ -17,8 +17,8 @@ const Home: NextPage = () => {
         <LoreSection1 />
         <LoreSection2 />
         <LoreSection3 />
-        <RoadmapSection />
       </div>
+      <RoadmapSection />
       <FAQSection />
       <PartnerSection />
       <TeamSection />
