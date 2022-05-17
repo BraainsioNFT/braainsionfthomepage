@@ -4,10 +4,10 @@ export const LoreSection2: FC = () => {
   const [hover, setHover] = useState(false);
   return (
     <section
-      className="flex flex-col 2xl:flex-row-reverse justify-center items-center p-20"
+      className=" p-10 flex flex-col lg:flex-row-reverse justify-center items-center"
       data-aos="fade-up"
     >
-      <div className="w-full max-w-[700px] m-10 relative flex flex-col items-center justify-center">
+      <div className="w-full max-w-[500px] m-10 relative flex flex-col items-center justify-center">
         <div
           className={`absolute ${
             hover ? "opacity-100" : "opacity-0"
@@ -48,7 +48,7 @@ export const LoreSection2: FC = () => {
         <img
           src="image2vector.svg"
           alt="Gentleman"
-          className="w-full drop-shadow-2xl hover:animate-pulse"
+          className="w-full drop-shadow-2xl hover:scale-105 transition"
           onMouseOver={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
         />

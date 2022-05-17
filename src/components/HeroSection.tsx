@@ -1,13 +1,12 @@
+import Image from "next/image";
 import { FC } from "react";
 import { FaDiscord, FaGamepad } from "react-icons/fa";
 import Canvas from "./Canvas";
 
 export const HeroSection: FC = () => {
   return (
-    <section
-      className="relative flex flex-col items-center min-h-screen"
-      style={{ backgroundImage: "url(grass-bg.png)" }}
-    >
+    <section className="relative flex flex-col items-center min-h-screen">
+      <Image src="/bg-grass.png" alt="" layout="fill" />
       <Canvas />
       <div className="flex flex-col m-20 max-w-[768px] z-30">
         <img src="braains-logo.png" alt="Braains.io Logo" className="w-full" />
@@ -18,7 +17,7 @@ export const HeroSection: FC = () => {
         <div className="w-full md:flex md:w-[800px] md:h-[450px] rounded-3xl overflow-hidden shadow-3xl">
           <div className="flex flex-col items-center justify-between flex-1 p-10 bg-teal-900">
             <img
-              src="image2vector.svg"
+              src="/image2vector.svg"
               alt="example nft"
               className="rounded-full border-4 border-slate-700 mt-10 p-3 w-44 bg-slate-800"
             />

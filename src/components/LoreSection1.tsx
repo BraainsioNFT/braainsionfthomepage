@@ -4,10 +4,10 @@ export const LoreSection1: FC = () => {
   return (
     <section
       id="lore"
-      className="flex flex-col 2xl:flex-row justify-center items-center p-20"
+      className="p-10 flex flex-col lg:flex-row justify-center items-center"
     >
       <div
-        className="grid grid-rows-3 grid-cols-3 gap-3 w-full max-w-[700px] m-10"
+        className="m-10 grid grid-rows-3 grid-cols-3 gap-3 w-full max-w-[500px]"
         data-aos="fade-right"
       >
         <img src="0.png" alt="nft-0" className="rounded-xl shadow-3xl" />
