@@ -34,7 +34,7 @@ export const RoadmapSection: FC = () => {
     <section
     ref={roadmapSection}
       id="roadmap"
-      className="flex flex-col justify-center items-center py-10 text-center bg-gradient-to-r from-stone-800 to-stone-500 overflow-auto"
+      className="flex flex-col justify-center items-center py-10 text-center overflow-auto"
     >
       <h1 className="text-6xl font-bold font-acme">Roadmap</h1>
       <div className="w-full flex justify-center items-center">
