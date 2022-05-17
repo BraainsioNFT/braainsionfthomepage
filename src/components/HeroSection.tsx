@@ -37,7 +37,7 @@ export const HeroSection: FC = () => {
                 <h1 className="ml-2 font-bold text-lg">Join our Discord</h1>
               </a>
               <a
-                href="https://www.braains.io/"
+                href="https://www.modd.io/play/nft-braains-io"
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-primary w-full mt-2"
