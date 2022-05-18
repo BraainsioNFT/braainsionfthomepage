@@ -12,11 +12,11 @@
 }
 
 .bg-carlos {
-  background-image: url('../../public/cemetary.png')
+  background-image: url('/cemetary.png')
 }
 
 .bg-grass {
-  background-image: url('../../public/bg-grass.png')
+  background-image: url('/bg-grass.png')
 }
 
 /* ANIM CANVAS */
