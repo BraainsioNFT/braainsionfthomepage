@@ -19,6 +19,7 @@ const Home: NextPage = () => {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <meta name="description" content="Official NFT for the hit browser zombie survival game, braains.io! The apocalypse is coming to Web3, will you survive with style?" />
+        <link rel="icon" type="image/ico" sizes="32x32" href="images/favicon.ico" />
       </Head>
       <HeroSection />
       <div className="bg-gradient-to-b from-teal-700 to-gray-900 overflow-hidden">
