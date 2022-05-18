@@ -20,7 +20,7 @@ export const RoadmapSection: FC = () => {
 
     for (const item of items) {
       list.push(
-        <div className="flex w-fit relative py-2 items-center">
+        <div className="flex w-fit relative py-2 items-center" key={items.indexOf(item)}>
           <img src={item.isDone? "checked.png" : "unchecked.png"} className="h-5 aspect-square"></img>
           <p className="pl-5">{item.content}</p>
         </div>
