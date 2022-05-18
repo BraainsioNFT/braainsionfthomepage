@@ -4,8 +4,6 @@ import React, { Dispatch, SetStateAction, useState } from 'react'
 type RoadmapCardProps = { id: number, title: string, desc: string, dispDesc: JSX.Element, setDisp: Dispatch<SetStateAction<number>>, isDisplayed?: boolean, isHovered?: boolean, icon?: string }
 
 const RoadmapCard = (props: RoadmapCardProps) => {
-	const [cancelAos, setCancelAos] = useState(false);
-
 	return (
 		<div
 			className={`${props.isDisplayed? "w-[768px] h-[560px]" : "w-96"} flex flex-col items-center p-3 font-acme relative`}

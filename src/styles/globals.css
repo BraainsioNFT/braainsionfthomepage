@@ -11,6 +11,14 @@
   color: white;
 }
 
+.bg-carlos {
+  background-image: url('../../public/cemetary.png')
+}
+
+.bg-grass {
+  background-image: url('../../public/bg-grass.png')
+}
+
 /* ANIM CANVAS */
 
 .anim-bg {
