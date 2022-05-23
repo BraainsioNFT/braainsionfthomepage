@@ -30,9 +30,7 @@ export const TeamCard: FC<Props> = ({ name, img, role, description }) => {
       <div className="self-start ml-4">
         <h2 className="mt-4 text-lg font-acme text-slate-200">{role}</h2>
         <h1 className="font-bold text-3xl">{name}</h1>
-        <p className="font-thin mt-5 text-xl">
-          {description ?? "No Description"}
-        </p>
+        <p className="font-thin mt-5 text-xl">{description}</p>
       </div>
     </div>
   );

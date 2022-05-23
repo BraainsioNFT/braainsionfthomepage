@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?Palette+Mosaic&family=Acme&family=Bebas+Neue&family=Plus+Jakarta+Sans&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +6,6 @@
 
 * {
   scroll-behavior: smooth;
-  color: white;
 }
 
 .bg-carlos {

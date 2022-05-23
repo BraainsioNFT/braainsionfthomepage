@@ -8,7 +8,7 @@ export const FooterSection: FC = () => {
       <div className="w-[768px] flex justify-between">
         <div>
           <GiRaiseZombie size={100} />
-          <p className='font-bold mt-1'>&copy; 2022 Braains.io NFT</p>
+          <p className="font-bold mt-1">&copy; 2022 Braains.io NFT</p>
         </div>
         <div>
           <span className="footer-title">Social</span>

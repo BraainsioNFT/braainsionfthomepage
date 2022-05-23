@@ -9,6 +9,8 @@ module.exports = {
       fontFamily: {
         acme: ["Acme", "sans-serif"],
         palette_mosaic: ["Palette Mosaic", "sans-serif"],
+        bebas_neue: ["Bebas Neue", "sans-serif"],
+        plus_jarkarta: ["Plus Jakarta Sans", "sans-serif"],
       },
       boxShadow: {
         drop: "0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%), 0px 11px 15px -7px rgb(0 0 0 / 20%)",
@@ -18,4 +20,7 @@ module.exports = {
     },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  daisyui: {
+    themes: ["dark"],
+  },
 };
