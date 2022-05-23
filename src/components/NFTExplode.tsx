@@ -3,7 +3,6 @@ import { FC } from "react";
 
 type Props = {
   src: string;
-  z: number;
   x?: number;
   y?: number;
   scale?: number;
@@ -12,17 +11,16 @@ type Props = {
 
 export const NFTExplode: FC<Props> = ({
   src,
-  z,
   x = 0,
   y = 0,
   scale = 1,
   rotate = 0,
 }) => (
   <motion.div
-    className={`row-start-1 col-start-1  max-w-screen-md z-[${z}]`}
+    className="row-start-1 col-start-1  max-w-screen-md"
     initial="offscreen"
     whileInView="onscreen"
-    viewport={{ amount: 0.8 }}
+    viewport={{ amount: 1 }}
   >
     <motion.div
       className="w-full"
