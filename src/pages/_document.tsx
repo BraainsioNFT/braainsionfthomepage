@@ -9,7 +9,7 @@ export default function Document() {
         <meta property="og:url" content="https://about.braains.io" />
         <meta
           property="og:image"
-          content="https://about.braains.io/nftgif.gif"
+          content="https://about.braains.io/banner.jpg"
         />
         <meta
           property="og:description"
