@@ -6,10 +6,10 @@ export default function Document() {
       <Head>
         <meta property="og:title" content="Braains.io NFT" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://about.braains.io" />
+        <meta property="og:url" content="http://about.braains.io" />
         <meta
           property="og:image"
-          content="https://about.braains.io/banner.jpg"
+          content="http://about.braains.io/banner.jpg"
         />
         <meta
           property="og:description"
