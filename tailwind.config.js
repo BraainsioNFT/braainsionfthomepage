@@ -1,6 +1,12 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: ["./src/**/*{ts,tsx}"],
   theme: {
+    screens: {
+      "xs": "512px",
+      ...defaultTheme.screens
+    },
     extend: {
       colors: {
         "discord-blue-100": "#7289da",

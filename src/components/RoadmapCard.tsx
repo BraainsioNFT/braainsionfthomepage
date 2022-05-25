@@ -9,7 +9,7 @@ const RoadmapCard = (props: RoadmapCardProps) => {
 			className={`${props.isDisplayed ? "w-[768px] h-[560px]" : "w-96"} flex flex-col items-center p-3 font-acme relative`}
 			data-aos={props.isDisplayed ? "" : "zoom-in-left"}
 		>
-			<div className={`w-[90%] ${props.isDisplayed ? "h-full" : "h-64"} relative transition overflow-hidden shadow-drop bg-green-700 bg-opacity-75 text-opacity-100 text-white rounded-md ${props.isHovered && !props.isDisplayed ? "blur" : ""}`}>
+			<div className={`w-[90%] ${props.isDisplayed ? "h-full scale-50 xs:scale-75 md:scale-110" : "h-64"} relative transition overflow-hidden shadow-drop bg-green-700 bg-opacity-75 text-opacity-100 text-white rounded-md ${props.isHovered && !props.isDisplayed ? "blur" : ""}`}>
 				<button onClick={() => {
 					props.setDisp(0);
 
