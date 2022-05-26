@@ -9,6 +9,7 @@ const RoadmapCard = (props: RoadmapCardProps) => {
 			className={`${props.isDisplayed ? "w-[768px] h-[560px]" : "w-96"} flex flex-col items-center p-3 font-acme relative`}
 			data-aos={props.isDisplayed ? "" : "zoom-in-left"}
 		>
+			<img className={props.isDisplayed ? "h-[80%] aspect-square absolute opacity-75 left-0 right-0 top-0 bottom-0 m-auto animate-pulse" : "hidden"} src={props.icon}></img>
 			<div className={`w-[90%] ${props.isDisplayed ? "h-full scale-50 xs:scale-75 md:scale-110" : "h-64"} relative transition overflow-hidden shadow-drop bg-green-700 bg-opacity-75 text-opacity-100 text-white rounded-md ${props.isHovered && !props.isDisplayed ? "blur" : ""}`}>
 				<button onClick={() => {
 					props.setDisp(0);
@@ -25,10 +26,10 @@ const RoadmapCard = (props: RoadmapCardProps) => {
 				</div>
 				<div className={`flex ${props.isDisplayed ? "h-96" : "h-48"}`}>
 					<div className={props.isDisplayed ? "hidden" : "w-1/3 relative px-2"}>
-						<img src={props.icon ?? "/0.png"} className="absolute left-0 right-0 top-0 bottom-0 m-auto"></img>
+						<img src={props.icon ?? "/0.png"} className="absolute left-0 right-0 top-0 bottom-0 m-auto pr-2 pl-5"></img>
 					</div>
 					<div className={props.isDisplayed ? "w-full relative px-2" : "w-2/3 relative px-2"}>
-						<p className={`absolute top-0 bottom-0 my-auto h-fit ${props.isDisplayed ? "px-20" : "px-5"}`}>
+						<p className={`absolute top-0 bottom-0 my-auto h-fit ${props.isDisplayed ? "px-20" : "pr-5 pl-2"}`}>
 							{
 								props.isDisplayed ?
 									props.dispDesc ?? '- item 1\n- item 2'
