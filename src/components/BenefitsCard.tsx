@@ -5,8 +5,8 @@ type BenefitsCardProps = { title: string, img: string, text: JSX.Element, pos: '
 
 const BenefitsCard = (props: BenefitsCardProps) => {
 	return (
-		<div className={`flex justify-${{ 'left': 'start', 'right': 'end' }[props.pos]}`}>
-			<div className="flex w-[80%]">
+		<div className={`flex w-[80%] justify-self-${{ 'left': 'start', 'right': 'end' }[props.pos]}`}>
+			<div className="flex w-full">
 				<div className="bg-slate-800 rounded-lg h-64 w-[28rem] md:h-96 md:w-[42rem] gap-10 left-0 right-0 mx-auto" data-aos={`fade-${props.pos}`}>
 					<div className="bg-white rounded-t-lg rounded-b-none h-1/4 text-center text-3xl flex items-center justify-center">
 						<h1
