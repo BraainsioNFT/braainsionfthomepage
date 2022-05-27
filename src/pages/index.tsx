@@ -10,6 +10,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { BreakdownSection } from "../components/BreakdownSection";
 import { MarqueeSection } from "../components/MarqueeSection";
+import BenefitsSection from "../components/BenefitsSection";
 const Home: NextPage = () => {
   return (
     <>
@@ -32,6 +33,7 @@ const Home: NextPage = () => {
       <HeroSection />
       <div className="bg-gradient-to-b from-teal-700 to-gray-900 overflow-hidden">
         <LoreSection />
+        <BenefitsSection />
         <MarqueeSection />
         <BreakdownSection />
         <RoadmapSection />
