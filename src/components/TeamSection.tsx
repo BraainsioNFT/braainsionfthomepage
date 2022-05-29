@@ -29,7 +29,7 @@ export const TeamSection: FC = () => {
             role="Advisor"
             description="Creator of Braains.io. Co-Founder of Modd.io"
           />
-          <TeamCard name="AetherWindZ" img="aetherwindz.png" role="Advisor" />
+          <TeamCard name="AetherWindZ" img="aetherwindz.png" role="Advisor" description="Crypto &amp; startup builder. Wants to bring Web3 to everyone"/>
         </div>
       </div>
     </section>
