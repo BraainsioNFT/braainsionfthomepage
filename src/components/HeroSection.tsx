@@ -7,7 +7,7 @@ export const HeroSection: FC = () => {
   return (
     <section className="relative flex flex-col items-center min-h-screen bg-grass">
       <Canvas />
-      <div className="flex flex-col m-20 max-w-screen-md z-30">
+      <div className="flex flex-col m-5 max-w-screen-sm z-30">
         <img src="braains-logo.png" alt="Braains.io Logo" className="w-full" />
         <img src="subtitle.png" alt="Subtitle" className="w-full" />
       </div>
@@ -18,10 +18,10 @@ export const HeroSection: FC = () => {
             <img
               src="/aman2.png"
               alt="example nft"
-              className="rounded-full border-4 border-slate-700 mt-10 p-3 w-44 bg-slate-800"
+              className="rounded-full border-4 border-slate-700 p-3 w-44 bg-slate-800"
             />
 
-            <h1 className="mt-5 font-bold text-lg">
+            <h1 className="mt-5 font-bold text-primary-content">
               Customize Your Braains.io Experience
             </h1>
 
@@ -33,7 +33,7 @@ export const HeroSection: FC = () => {
                 className="btn btn-primary w-full mt-5"
               >
                 <FaDiscord size={30} />
-                <h1 className="ml-2 font-bold text-lg">Join our Discord</h1>
+                <h1 className="ml-2 font-bold text-md">Join our Discord</h1>
               </a>
               <a
                 href="https://www.modd.io/play/nft-braains-io"
@@ -42,7 +42,7 @@ export const HeroSection: FC = () => {
                 className="btn btn-primary w-full mt-2"
               >
                 <FaGamepad size={30} />
-                <h1 className="ml-2 font-bold text-lg">Play Game</h1>
+                <h1 className="ml-2 font-bold text-md">Play Game</h1>
               </a>
             </div>
           </div>
@@ -50,7 +50,7 @@ export const HeroSection: FC = () => {
             <img
               src="nftgif.gif"
               alt="NFT GIF"
-              className="mt-10 border-4 border-teal-800 w-44 bg-teal-900 rounded-full"
+              className="border-4 border-teal-800 w-44 bg-teal-900 rounded-full"
             />
             <div className="w-full flex flex-col items-center">
               <h2 className="mt-5">Join the Braains Universe</h2>

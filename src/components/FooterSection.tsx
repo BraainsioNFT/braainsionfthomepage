@@ -13,10 +13,20 @@ export const FooterSection: FC = () => {
         <div>
           <span className="footer-title">Social</span>
           <div className="flex gap-5">
-            <a>
+            <a
+              href="https://twitter.com/braainsio"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-primary-content"
+            >
               <FaTwitter size={40} />
             </a>
-            <a>
+            <a
+              href="https://discord.gg/braainsio"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-primary-content"
+            >
               <FaDiscord size={40} />
             </a>
           </div>

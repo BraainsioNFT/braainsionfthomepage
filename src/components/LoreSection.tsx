@@ -5,21 +5,18 @@ import { SectionTitle } from "./SectionTitle";
 
 export const LoreSection: FC = () => {
   return (
-    <section
-      id="lore"
-      className="py-20 flex flex-col items-center"
-    >
+    <section id="lore" className="py-20 flex flex-col items-center">
       <SectionTitle title="THE APOCALYPSE" subtitle="Braains.io Presents..." />
 
       <div className="flex flex-col md:flex-row justify-center mt-5 max-w-screen-lg">
-        <div className="flex-1 p-10">
+        <div className="flex-1 p-5 flex items-center justify-center" data-aos="fade-right">
           <img
-            src="189.png"
+            src="/nfts/no-background/189.png"
             alt="Survivor"
-            className="w-full drop-shadow-2xl rotate-12"
+            className="w-full drop-shadow-2xl rotate-12 max-w-xs"
           />
         </div>
-        <div className="flex-1 p-10">
+        <div className="flex-1 p-10" data-aos="fade-left">
           <div className="relative font-plus_jarkarta">
             <span className="absolute left-0 top-0 h-full w-3 rounded-full bg-gradient-to-b from-primary to-secondary" />
             <p className="ml-7 my-10 text-primary-content font-thin text-xl">
@@ -46,12 +43,7 @@ export const LoreSection: FC = () => {
             href="https://discord.gg/qd6EsBA"
             target="_blank"
             rel="noreferrer"
-            className="btn btn-primary btn-lg mt-7 rounded-full"
-            style={{
-              backgroundImage:
-                "linear-gradient(45deg, hsl(var(--p)), hsl(var(--a)))",
-              backgroundSize: "100%",
-            }}
+            className="btn btn-primary btn-lg mt-7 rounded-full bg-gradient-to-tr from-primary to-accent hover:from-secondary hover:to-info"
           >
             <span>
               <FaDiscord size={30} />

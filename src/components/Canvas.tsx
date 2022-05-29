@@ -1,6 +1,5 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable jsx-a11y/alt-text */
 import React, { useEffect, useRef } from "react";
+
 import Character from "../structures/Character";
 import { draw, load } from "../util";
 import useWindowSize from "../util/useWindowSize";
@@ -67,7 +66,7 @@ function Canvas() {
     return () => {
       window.cancelAnimationFrame(animationFrameId);
     };
-  }, [draw]);
+  });
 
   return (
     <div
@@ -81,24 +80,22 @@ function Canvas() {
         aria-label="Second Brain"
         className="w-full h-full"
       >
-        Alternative content describing what the canvas displays.
+        NFT Characters.
       </canvas>
       <div ref={animatedBackgroundCharacterImagesRef}>
-        <img src="22.png" className="hidden"></img>
-        <img src="30.png" className="hidden"></img>
-        <img src="45.png" className="hidden"></img>
-        <img src="64.png" className="hidden"></img>
-        <img src="111.png" className="hidden"></img>
-        <img src="126.png" className="hidden"></img>
-        <img src="143.png" className="hidden"></img>
-        <img src="184.png" className="hidden"></img>
-        <img src="189.png" className="hidden"></img>
-        <img src="taro10.png" className="hidden"></img>
-        <img src="taro24.png" className="hidden"></img>
-        <img src="taro39.png" className="hidden"></img>
-        <img src="taro102.png" className="hidden"></img>
-        <img src="taro154.png" className="hidden"></img>
-        <img src="taro192.png" className="hidden"></img>
+        <img src="/nfts/no-background/30.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/45.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/64.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/111.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/126.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/143.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/184.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/189.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro10.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro24.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro39.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro154.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro192.png" alt="" className="hidden" />
       </div>
     </div>
   );

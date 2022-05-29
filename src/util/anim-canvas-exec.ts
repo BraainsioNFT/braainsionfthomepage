@@ -23,6 +23,6 @@ export function load() {
 	Character.characters = [];
 
 	resize();
-  spawnCharacters(40);
+  spawnCharacters(24);
   draw();
 } 

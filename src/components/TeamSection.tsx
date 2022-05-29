@@ -16,7 +16,12 @@ export const TeamSection: FC = () => {
             description="Loves crypto and genuine NFTs. Hates rugpulls with a passion."
           />
           <TeamCard name="Phantasma" img="phantasma.png" role="Game Dev" />
-          <TeamCard name="Cleito.art" img="cleito.png" role="Artist" description="A Brazilian artist focused on the Pixel Art!" />
+          <TeamCard
+            name="Cleito.art"
+            img="cleito.png"
+            role="Artist"
+            description="A Brazilian artist focused on the Pixel Art!"
+          />
           <TeamCard
             name="Adrastopoulous"
             img="adrastopoulous.png"
@@ -29,7 +34,12 @@ export const TeamSection: FC = () => {
             role="Advisor"
             description="Creator of Braains.io. Co-Founder of Modd.io"
           />
-          <TeamCard name="AetherWindZ" img="aetherwindz.png" role="Advisor" description="Crypto &amp; startup builder. Wants to bring Web3 to everyone"/>
+          <TeamCard
+            name="AetherWindZ"
+            img="aetherwindz.png"
+            role="Advisor"
+            description="Crypto &amp; startup builder. Wants to bring Web3 to everyone."
+          />
         </div>
       </div>
     </section>

@@ -16,7 +16,8 @@ const FAQs: Array<{ question: string; answer: string }> = [
   },
   {
     question: "What will the price be?",
-    answer: "The exact price will be determined based on market conditions as we approach mint day. For us, it's more important to have many holders than it is to make more money as dedicated holders are infinitely more valuable than a couble extra funding when it comes to growth.",
+    answer:
+      "The exact price will be determined based on market conditions as we approach mint day. For us, it's more important to have many holders than it is to make more money as dedicated holders are infinitely more valuable than a couble extra funding when it comes to growth.",
   },
   {
     question: "Can I earn crypto?",
@@ -25,7 +26,11 @@ const FAQs: Array<{ question: string; answer: string }> = [
   },
   { question: "When is the mint?", answer: "July/August 2022" },
   { question: "When can I Play-to-Earn?", answer: "Anticipated early 2023" },
-  { question: "Where can I contact the team if I still have questions?", answer: "You can contact us on discord at discord.gg/braainsio or contact the project lead directly at QiNG-agar#0540"}
+  {
+    question: "Where can I contact the team if I still have questions?",
+    answer:
+      "You can contact us on discord at discord.gg/braainsio or contact the project lead directly at QiNG-agar#0540",
+  },
 ];
 
 export const FAQSection: FC = () => {
