@@ -59,80 +59,13 @@ export const RoadmapSection: FC = () => {
     >
       <SectionTitle title="ROADMAP" />
       <div className="w-full flex justify-center items-center">
-        <div
-          className={`mt-10 ${
-            disp === 0 ? "grid grid-cols-1 lg:grid-cols-2" : "h-[560px]"
-          }`}
-        >
-          <div
-            className={hideConditionally(1)}
-            onMouseOver={() => {
-              setHover(1);
-            }}
-            onMouseLeave={() => {
-              setHover(0);
-            }}
-          >
-            <RoadmapCard
-              dateComplete={"By August 2022"}
-              icon={"/icon_Outbreak_resized.png"}
-              dispDesc={Checklistify([
-                {
-                  content: "Launch Site, Roadmap, and Demo Game",
-                  isDone: true,
-                  expanded:
-                    "Our site, roadmap, and demo game all linked at about.braains.io so all project information is easily accessible to interested buyers.",
-                },
-                {
-                  content: "Build up network of VIPs",
-                  isDone: false,
-                  expanded:
-                    "Collab with NFT influencers and projects who are willing to promote BraainsioNFT in exchange for access to VIP mint.",
-                },
-                {
-                  content: "Start WhiteList programs and giveaways",
-                  isDone: false,
-                  expanded:
-                    "Incentivize the community to shill and promote the NFT in exchange for WhiteList",
-                },
-                {
-                  content:
-                    "Partner with other NFT projects (WhiteList convergence)",
-                  isDone: false,
-                  expanded:
-                    "Offer WhiteList to holders of a partnered project in exchange for promotion",
-                },
-                {
-                  content: "Secondary marketplace approval",
-                  isDone: false,
-                  expanded: "Get approved to list on MagicEden",
-                },
-                {
-                  content: "VIP Mint",
-                  isDone: false,
-                  expanded:
-                    "Around 50-100 of the first BraainsioNFTs are minted to VIPs at a heavily discounted price",
-                },
-                {
-                  content: "WhiteList Mint",
-                  isDone: false,
-                  expanded:
-                    "No more than 1500 of subsequent NFTs minted to WL members at a slightly discounted price",
-                },
-                {
-                  content: "Public Mint",
-                  isDone: false,
-                  expanded:
-                    "Remaining ~3500 NFTs sold at public mint at standard price",
-                },
-              ])}
-              id={1}
-              setDisp={setDisp}
-              isHovered={hover === 1}
-              isDisplayed={disp === 1}
-              title="Stage I: Outbreak"
-              desc="The apocalypse begins with the launch of 5,000 unique survivor BraainsioNFTs."
-            />
+        <div className={`mt-10 ${disp === 0 ? "grid grid-cols-1 lg:grid-cols-2" : "h-[560px]"}`}>
+          <div className={hideConditionally(1)} onMouseOver={() => {
+            setHover(1);
+          }} onMouseLeave={() => {
+            setHover(0);
+          }} >
+            <RoadmapCard dateComplete={"By August 2022"} icon={'/icon_Outbreak_resized.png'} dispDesc={Checklistify([{ content: "Launch Site, Roadmap, and Demo Game", isDone: true, expanded: "Our site, roadmap, and demo game all linked at about.braains.io so all project information is easily accessible to interested buyers." }, { content: "Build up network of VIPs", isDone: false, expanded: "Collab with NFT influencers and projects who are willing to promote BraainsioNFT in exchange for access to VIP mint." }, { content: "Start WhiteList programs and giveaways", isDone: false, expanded: "Incentivize the community to shill and promote the NFT in exchange for WhiteList" }, { content: "Partner with other NFT projects (WhiteList convergence)", isDone: false, expanded: "Offer WhiteList to holders of a partnered project in exchange for promotion" }, { content: "Secondary marketplace approval", isDone: false, expanded: "Get approved to list on MagicEden" }, { content: "VIP Mint", isDone: false, expanded: "Around 50-100 presale BraainsioNFTs are minted to VIPs" }, { content: "WhiteList Mint", isDone: false, expanded: "No more than 1500 of subsequent NFTs minted to WL members at a slightly discounted price" }, { content: "Public Mint", isDone: false, expanded: "Remaining ~3500 NFTs sold at public mint at standard price" }])} id={1} setDisp={setDisp} isHovered={hover === 1} isDisplayed={disp === 1} title="Stage I: Outbreak" desc="The apocalypse begins with the launch of 5,000 unique survivor BraainsioNFTs." />
           </div>
           <div
             className={hideConditionally(2)}

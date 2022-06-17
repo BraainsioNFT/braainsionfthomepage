@@ -4,6 +4,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@responsive {
+  .text-shadow-sm {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .text-shadow-md {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 1);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 15px 30px rgba(0, 0, 0, 1), 0 5px 15px rgba(0, 0, 0, 1);
+  }
+
+  .text-shadow-none {
+    text-shadow: none;
+  }
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -37,6 +55,10 @@
   padding-right: 15px;
 }
 
-.anim-bg .animatedBackgroundCharacterImage > img {
+.anim-bg .animatedBackgroundCharacterImage>img {
   display: none;
+}
+
+.bg-city {
+  background-image: url('/city.png');
 }

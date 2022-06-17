@@ -11,15 +11,15 @@ export const LoreSection: FC = () => {
       <div className="flex flex-col md:flex-row justify-center mt-5 max-w-screen-lg">
         <div className="flex-1 p-5 flex items-center justify-center" data-aos="fade-right">
           <img
-            src="/nfts/no-background/189.png"
+            src="hunter.png"
             alt="Survivor"
             className="w-full drop-shadow-2xl rotate-12 max-w-xs"
           />
         </div>
-        <div className="flex-1 p-10" data-aos="fade-left">
+        <div className="flex-1 p-10 text-shadow-lg">
           <div className="relative font-plus_jarkarta">
             <span className="absolute left-0 top-0 h-full w-3 rounded-full bg-gradient-to-b from-primary to-secondary" />
-            <p className="ml-7 my-10 text-primary-content font-thin text-xl">
+            <p className="ml-7 my-10 text-primary-content font-thin text-xl text-shadow-lg">
               When the outbreak inevitably occurred, the remaining healthy
               survivors sought refuge inside the houses.
             </p>

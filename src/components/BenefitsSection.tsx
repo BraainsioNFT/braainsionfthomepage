@@ -37,6 +37,7 @@ const BenefitsSection: FC = () => {
   return (
     <section id="benefits" className="py-20 flex flex-col items-center">
       <SectionTitle subtitle='With Braains.ioNFT,' title="You Will Get..." />
+			<div className="pb-10"></div>
       <BenefitsCard
         title="High Quality Pixel Art"
         img="/wardrobe1.png"

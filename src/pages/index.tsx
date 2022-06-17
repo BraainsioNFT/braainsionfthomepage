@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         />
       </Head>
       <HeroSection />
-      <div className="bg-gradient-to-b from-teal-700 to-gray-900 overflow-hidden">
+      <div className="overflow-hidden bg-city bg-no-repeat bg-contain">
         <LoreSection />
         <BenefitsSection />
         <MarqueeSection />

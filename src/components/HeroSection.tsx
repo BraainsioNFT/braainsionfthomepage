@@ -1,3 +1,4 @@
+import { url } from "inspector";
 import { FC } from "react";
 import { FaDiscord, FaGamepad } from "react-icons/fa";
 
@@ -62,16 +63,7 @@ export const HeroSection: FC = () => {
         </div>
       </div>
 
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-        className="absolute bottom-0 z-20"
-      >
-        <path
-          fill="#10756e"
-          d="M0,128L60,117.3C120,107,240,85,360,85.3C480,85,600,107,720,122.7C840,139,960,149,1080,149.3C1200,149,1320,139,1380,133.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-        ></path>
-      </svg>
+      <img className="absolute bottom-0 z-20 w-full h-auto" src="/city-top.png"></img>
     </section>
   );
 };
