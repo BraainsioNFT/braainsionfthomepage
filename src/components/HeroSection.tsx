@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { url } from "inspector";
 import { FC } from "react";
 import { FaDiscord, FaGamepad } from "react-icons/fa";
