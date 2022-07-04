@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { FC } from "react";
 import { FaDiscord } from "react-icons/fa";
 
@@ -6,6 +7,7 @@ import { SectionTitle } from "./SectionTitle";
 export const LoreSection: FC = () => {
   return (
     <section id="lore" className="py-20 flex flex-col items-center">
+      <img className="absolute -top-1 w-full h-auto object-cover" src="/clouds2.png"></img>
       <SectionTitle title="THE APOCALYPSE" subtitle="Braains.io Presents..." />
 
       <div className="flex flex-col md:flex-row justify-center mt-5 max-w-screen-lg">

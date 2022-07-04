@@ -64,7 +64,7 @@ export const HeroSection: FC = () => {
         </div>
       </div>
 
-      <img className="absolute bottom-0 z-20 w-full h-auto" src="/city-top.png"></img>
+      <img className="absolute -bottom-1 z-20 w-full h-auto object-cover" src="/clouds1.png"></img>
     </section>
   );
 };

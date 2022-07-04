@@ -11,6 +11,7 @@ import Head from "next/head";
 import { BreakdownSection } from "../components/BreakdownSection";
 import { MarqueeSection } from "../components/MarqueeSection";
 import BenefitsSection from "../components/BenefitsSection";
+import { Parallax } from "react-parallax";
 const Home: NextPage = () => {
   return (
     <>
@@ -31,14 +32,16 @@ const Home: NextPage = () => {
         />
       </Head>
       <HeroSection />
-      <div className="overflow-hidden bg-city bg-no-repeat bg-contain">
+      <Parallax bgImage="/city.png" bgImageAlt="The City and the Apocalypse" strength={2500} blur={0} bgImageStyle={{
+        "object-fit": "cover"
+      }}>
         <LoreSection />
         <BenefitsSection />
         <MarqueeSection />
         <BreakdownSection />
         <RoadmapSection />
         <FAQSection />
-      </div>
+      </Parallax>
       <PartnerSection />
       <TeamSection />
       <FooterSection />

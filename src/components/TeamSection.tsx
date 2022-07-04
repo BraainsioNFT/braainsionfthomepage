@@ -15,7 +15,12 @@ export const TeamSection: FC = () => {
             role="Lead"
             description="Loves crypto and genuine NFTs. Hates rugpulls with a passion."
           />
-          <TeamCard name="Phantasma" img="phantasma.png" role="Game Dev" />
+          <TeamCard 
+            name="Phantasma"
+            img="phantasma.png" 
+            role="Game Dev" 
+            description="NFT content appreciator."
+          />
           <TeamCard
             name="Cleito.art"
             img="cleito.png"

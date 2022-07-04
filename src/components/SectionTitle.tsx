@@ -6,7 +6,7 @@ type Props = {
 };
 
 export const SectionTitle: FC<Props> = ({ subtitle, title }) => (
-  <div className="bg-slate-800 text-center p-5 shadow-3xl w-full md:w-fit md:rounded-3xl md:mx-10">
+  <div className="bg-slate-800 text-center p-5 shadow-3xl w-full md:w-fit md:rounded-3xl md:mx-10 z-20">
     <h2
       data-aos="fade-left"
       className={`text-xl md:text-2xl lg:text-3xl font-thin font-acme text-primary-content ${
