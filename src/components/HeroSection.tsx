@@ -20,7 +20,7 @@ export const HeroSection: FC = () => {
             <img
               src="/aman2.png"
               alt="example nft"
-              className="rounded-full border-4 border-slate-700 p-3 w-44 bg-slate-800"
+              className="rounded-full border-4 p-3 w-44 bg-amber-400 border-amber-500"
             />
 
             <h1 className="mt-5 font-bold text-primary-content">

@@ -65,7 +65,7 @@ export const RoadmapSection: FC = () => {
           }} onMouseLeave={() => {
             setHover(0);
           }} >
-            <RoadmapCard dateComplete={"By August 2022"} icon={'/icon_Outbreak_resized.png'} dispDesc={Checklistify([{ content: "Launch Site, Roadmap, and Demo Game", isDone: true, expanded: "Our site, roadmap, and demo game all linked at about.braains.io so all project information is easily accessible to interested buyers." }, { content: "Build up network of VIPs", isDone: false, expanded: "Collab with NFT influencers and projects who are willing to promote BraainsioNFT in exchange for access to VIP mint." }, { content: "Start WhiteList programs and giveaways", isDone: false, expanded: "Incentivize the community to shill and promote the NFT in exchange for WhiteList" }, { content: "Partner with other NFT projects (WhiteList convergence)", isDone: false, expanded: "Offer WhiteList to holders of a partnered project in exchange for promotion" }, { content: "Secondary marketplace approval", isDone: false, expanded: "Get approved to list on MagicEden" }, { content: "VIP Mint", isDone: false, expanded: "Around 50-100 presale BraainsioNFTs are minted to VIPs" }, { content: "WhiteList Mint", isDone: false, expanded: "No more than 1500 of subsequent NFTs minted to WL members at a slightly discounted price" }, { content: "Public Mint", isDone: false, expanded: "Remaining ~3500 NFTs sold at public mint at standard price" }])} id={1} setDisp={setDisp} isHovered={hover === 1} isDisplayed={disp === 1} title="Stage I: Outbreak" desc="The apocalypse begins with the launch of 5,000 unique survivor BraainsioNFTs." />
+            <RoadmapCard dateComplete={"August/September 2022"} icon={'/icon_Outbreak_resized.png'} dispDesc={Checklistify([{ content: "Launch Site, Roadmap, and Demo Game", isDone: true, expanded: "Our site, roadmap, and demo game all linked at about.braains.io so all project information is easily accessible to interested buyers." }, { content: "Build up network of VIPs", isDone: false, expanded: "Collab with NFT influencers and projects who are willing to promote BraainsioNFT in exchange for access to VIP mint." }, { content: "Start WhiteList programs and giveaways", isDone: false, expanded: "Incentivize the community to shill and promote the NFT in exchange for WhiteList" }, { content: "Partner with other NFT projects (WhiteList convergence)", isDone: false, expanded: "Offer WhiteList to holders of a partnered project in exchange for promotion" }, { content: "Secondary marketplace approval", isDone: false, expanded: "Get approved to list on MagicEden" }, { content: "VIP Mint", isDone: false, expanded: "Around 50-100 presale BraainsioNFTs are minted to VIPs" }, { content: "WhiteList Mint", isDone: false, expanded: "No more than 1500 of subsequent NFTs minted to WL members at a slightly discounted price" }, { content: "Public Mint", isDone: false, expanded: "Remaining ~3500 NFTs sold at public mint at standard price" }])} id={1} setDisp={setDisp} isHovered={hover === 1} isDisplayed={disp === 1} title="Stage I: Outbreak" desc="The apocalypse begins with the launch of 5,000 unique survivor BraainsioNFTs." />
           </div>
           <div
             className={hideConditionally(2)}
@@ -98,6 +98,12 @@ export const RoadmapSection: FC = () => {
                   expanded:
                     "Play to Earn functionality added across Modd.io, for which Braains.io will receive early/testing access. Through this system, game creators earn $MODD tokens through a Create to Earn model which they can (in the case of braains.io, will) use to reward players and incentivize activity and growth",
                 },
+                {
+                  content: "NFT Utility - Value Beyond the Pixel",
+                  isDone: false,
+                  expanded:
+                    "Giving our holders true value and satisfaction with their NFT through development of a whole host of NFT utilities that could include services like raffles, gambling, staking, and more as determined by the desires of our holder community!"
+                }
               ])}
               id={2}
               setDisp={setDisp}
@@ -133,6 +139,34 @@ export const RoadmapSection: FC = () => {
               isDisplayed={disp == 3}
               title="Stage III: Mutation"
               desc="A new threat arises to the survivors with the release of 5,000 unique zombie BraainsioNFTs."
+            />
+          </div>
+          <div
+            className={hideConditionally(4)}
+            onMouseOver={() => {
+              setHover(4);
+            }}
+            onMouseLeave={() => {
+              setHover(0);
+            }}
+          >
+            <RoadmapCard
+              dateComplete={"???"}
+              icon="/questionred.png"
+              dispDesc={Checklistify([
+                {
+                  content: "The secret",
+                  isDone: false,
+                  expanded:
+                    "...is only for those capable of surviving until the end.",
+                },
+              ])}
+              id={4}
+              setDisp={setDisp}
+              isHovered={hover === 4}
+              isDisplayed={disp == 4}
+              title="Stage IV: ?"
+              desc="It can't be..."
             />
           </div>
         </div>
