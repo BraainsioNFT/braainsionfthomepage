@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?Palette+Mosaic&family=Acme&family=Bebas+Neue&family=Plus+Jakarta+Sans&display=swap");
+@import "aos/dist/aos.css";
 
 @tailwind base;
 @tailwind components;
@@ -26,12 +27,31 @@
   scroll-behavior: smooth;
 }
 
+.bg-cloud-dark-top {
+  background-image: url("/cloudDarkTop.png");
+}
+
+.bg-cloud-dark-bottom {
+  background-image: url("/cloudDarkBottom.png");
+}
+
+.bg-cloud-light-top {
+  background-image: url("/cloudLightTop.png");
+}
+
+.bg-cloud-light-bottom {
+  background-image: url("/cloudLightBottom.png");
+}
+
 .bg-carlos {
-  background-image: url('/cemetery.png')
+  background-image: url("/cemetery.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .bg-grass {
-  background-image: url('/bg-grass.png')
+  background-image: url("/bg-grass.png");
 }
 
 /* ANIM CANVAS */
@@ -55,10 +75,12 @@
   padding-right: 15px;
 }
 
-.anim-bg .animatedBackgroundCharacterImage>img {
+.anim-bg .animatedBackgroundCharacterImage > img {
   display: none;
 }
 
 .bg-city {
-  background-image: url('/city.png');
+  background-image: url("/city.png");
 }
+
+

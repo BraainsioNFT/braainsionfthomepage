@@ -11,7 +11,7 @@ export const TeamCard: FC<Props> = ({ name, img, role, description }) => {
   const [hover, setHover] = useState(false);
   return (
     <div
-      className="w-56 flex flex-col items-center p-3"
+      className="w-56 flex flex-col items-center p-3 m-5"
       data-aos="zoom-in-left"
     >
       <div
@@ -22,9 +22,7 @@ export const TeamCard: FC<Props> = ({ name, img, role, description }) => {
         <img
           src={img}
           alt=""
-          className={`w-full h-full shadow-lg ${
-            hover ? "-rotate-45" : ""
-          } transition`}
+          className={`w-full h-full shadow-lg ${hover ? "-rotate-45" : ""} transition`}
         />
       </div>
       <div className="self-start ml-4">

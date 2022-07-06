@@ -51,6 +51,12 @@ export const TeamSection: FC = () => {
             role="Advisor"
             description="Crypto &amp; startup builder. Wants to bring Web3 to everyone."
           />
+          <TeamCard
+            name="Erigato"
+            img="erigato.gif"
+            role="Advisor"
+            description="Game Dev working on Social #Solana Related Projects that involve multiple frens all interacting in a shared Experience."
+          />
         </Marquee>
       </div>
     </section>

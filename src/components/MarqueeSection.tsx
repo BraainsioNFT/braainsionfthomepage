@@ -2,9 +2,9 @@ import { FC } from "react";
 import Marquee from "react-fast-marquee";
 
 export const MarqueeSection: FC = () => (
-  <section className="py-20 flex flex-col items-center">
+  <section className="mt-20 mb-40 flex flex-col items-center">
     <div>
-      <Marquee gradient={false} direction="left" className="my-3">
+      <Marquee gradient={false} direction="left" className="my-3 shadow-drop">
         <img src="/nfts/background/0.png" alt="nft-0" className="rounded-xl mx-3 h-48 md:h-64" />
         <img src="/nfts/background/14.png" alt="nft-1" className="rounded-xl mx-3 h-48 md:h-64" />
         <img src="/nfts/background/1.png" alt="nft-2" className="rounded-xl mx-3 h-48 md:h-64" />

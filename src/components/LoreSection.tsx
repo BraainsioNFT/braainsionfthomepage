@@ -7,11 +7,12 @@ import { SectionTitle } from "./SectionTitle";
 export const LoreSection: FC = () => {
   return (
     <section id="lore" className="py-20 flex flex-col items-center">
-      <img className="absolute -top-1 w-full h-auto object-cover" src="/clouds2.png"></img>
       <SectionTitle title="THE APOCALYPSE" subtitle="Braains.io Presents..." />
-
       <div className="flex flex-col md:flex-row justify-center mt-5 max-w-screen-lg">
-        <div className="flex-1 p-5 flex items-center justify-center" data-aos="fade-right">
+        <div
+          className="flex-1 p-5 flex items-center justify-center"
+          data-aos="fade-right"
+        >
           <img
             src="hunter.png"
             alt="Survivor"

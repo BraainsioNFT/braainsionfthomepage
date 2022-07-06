@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { url } from "inspector";
 import { FC } from "react";
 import { FaDiscord, FaGamepad } from "react-icons/fa";
 
@@ -63,8 +62,6 @@ export const HeroSection: FC = () => {
           </div>
         </div>
       </div>
-
-      <img className="absolute -bottom-1 z-20 w-full h-auto object-cover" src="/clouds1.png"></img>
     </section>
   );
 };

@@ -66,40 +66,42 @@ export const BreakdownSection: FC = () => {
 
   return (
     <section className="bg-gradient-to-tr from-secondary to-accent py-20 flex-col items-center hidden md:flex">
-      <SectionTitle title="BREAKDOWN" />
-      <div className="h-screen min-h-[768px] flex flex-col items-center justify-center w-full p-32">
-        <div className="w-full flex-grow grid grid-cols-1 grid-rows-1 place-items-center">
-          {Object.keys(components).map((key) => (
-            <NFTExplode
-              key={key}
-              name={key}
-              src={components[key].img}
-              x={components[key].x}
-              y={components[key].y}
-              rotate={components[key].rotate}
-            />
-          ))}
-        </div>
-        <div className="w-full h-48 flex items-center justify-between mt-20 p-4 bg-primary rounded-full">
-          <div className="form-control">
-            <select
-              className="select select-bordered"
-              onChange={(e) => setComponent(e.target.value)}
-            >
-              <option disabled selected>
-                Pick one
-              </option>
-              {Object.keys(components).map((key) => (
-                <option key={key} value={key}>
-                  {components[key].name}
-                </option>
-              ))}
-            </select>
+        <SectionTitle title="BREAKDOWN" />
+        <div className="p-10 min-h-[768px] flex items-center justify-center w-full max-w-screen-lg">
+          <div className="flex-1 grid grid-cols-1 grid-rows-1 place-items-center">
+            {Object.keys(components).map((key) => (
+              <NFTExplode
+                key={key}
+                name={key}
+                src={components[key].img}
+                x={components[key].x}
+                y={components[key].y}
+                rotate={components[key].rotate}
+              />
+            ))}
           </div>
-          <img src={components[component].img} alt="" className="h-full" />
-          <h2 className='font-bold text-primary-content'>{components[component].description}</h2>
+          <div className="h-72 p-5 flex flex-col items-center bg-slate-800 rounded-xl">
+            <div className="form-control">
+              <select
+                className="select select-bordered"
+                onChange={(e) => setComponent(e.target.value)}
+              >
+                <option disabled selected>
+                  Pick One!
+                </option>
+                {Object.keys(components).map((key) => (
+                  <option key={key} value={key}>
+                    {components[key].name}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <img src={components[component].img} alt="" />
+            <h2 className="font-thin font-bebas_neue text-2xl text-primary-content">
+              {components[component].description}
+            </h2>
+          </div>
         </div>
-      </div>
     </section>
   );
 };
