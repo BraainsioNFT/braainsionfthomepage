@@ -1,4 +1,5 @@
 import { FC } from "react";
+import Marquee from "react-fast-marquee";
 
 import { SectionTitle } from "./SectionTitle";
 import { TeamCard } from "./TeamCard";
@@ -7,18 +8,23 @@ export const TeamSection: FC = () => {
   return (
     <section className="bg-gray-900 py-20 flex flex-col items-center">
       <SectionTitle title="THE TEAM" />
-      <div className="flex flex-col items-center m-20 max-w-screen-lg">
-        <div className="mt-10 grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className='w-full max-w-screen-xl'>
+        <Marquee
+          gradientColor={[17, 24, 39]}
+          direction="left"
+          className="mt-10"
+          pauseOnHover={true}
+        >
           <TeamCard
             name="Qing Agar"
             img="qingagar.png"
             role="Lead"
             description="Loves crypto and genuine NFTs. Hates rugpulls with a passion."
           />
-          <TeamCard 
+          <TeamCard
             name="Phantasma"
-            img="phantasma.png" 
-            role="Game Dev" 
+            img="phantasma.png"
+            role="Game Dev"
             description="NFT content appreciator."
           />
           <TeamCard
@@ -45,7 +51,7 @@ export const TeamSection: FC = () => {
             role="Advisor"
             description="Crypto &amp; startup builder. Wants to bring Web3 to everyone."
           />
-        </div>
+        </Marquee>
       </div>
     </section>
   );
