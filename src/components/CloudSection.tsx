@@ -7,7 +7,7 @@ type Props = {
 export const CloudSection: FC<Props> = ({ light = true }) => (
   <section
     id="clouds"
-    className="absolute z-10 w-screen flex flex-col"
+    className="absolute z-10 w-full flex flex-col"
   >
     <div
       className={`absolute bottom-0 w-full h-16 bg-repeat-x bg-contain ${
