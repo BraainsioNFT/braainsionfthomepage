@@ -16,12 +16,6 @@ export const TeamSection: FC = () => {
           pauseOnHover={true}
         >
           <TeamCard
-            name="Qing Agar"
-            img="qingagar.png"
-            role="Lead"
-            description="Loves crypto and genuine NFTs. Hates rugpulls with a passion."
-          />
-          <TeamCard
             name="Phantasma"
             img="phantasma.png"
             role="Game Dev"
@@ -32,6 +26,12 @@ export const TeamSection: FC = () => {
             img="cleito.png"
             role="Artist"
             description="A Brazilian artist focused on the Pixel Art!"
+          />
+          <TeamCard
+            name="Qing Agar"
+            img="qingagar.png"
+            role="Lead"
+            description="Loves crypto and genuine NFTs. Hates rugpulls with a passion."
           />
           <TeamCard
             name="Adrastopoulous"

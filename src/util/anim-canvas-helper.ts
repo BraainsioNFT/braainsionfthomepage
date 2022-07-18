@@ -17,11 +17,10 @@ export function randomBetween(min: number, max: number) {
   return min + Math.random() * (max - min);
 }
 export function randomCharacterImage() {
-  return Character.animatedBackgroundCharacterImages[
-    Math.floor(
-      Math.random() * Character.animatedBackgroundCharacterImages.length
-    )
-  ];
+  const imgIndex = Math.floor(
+    Math.random() * Character.animatedBackgroundCharacterImages.length
+  )
+  return Character.animatedBackgroundCharacterImages.splice(imgIndex, 1)[0]
 }
 export function spawnCharacters(
   numCharacters: number): Character[] {

@@ -96,6 +96,25 @@ function Canvas() {
         <img src="/nfts/no-background/taro39.png" alt="" className="hidden" />
         <img src="/nfts/no-background/taro154.png" alt="" className="hidden" />
         <img src="/nfts/no-background/taro192.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro1.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro3.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro22.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro31.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro32.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro45.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro47.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro57.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro59.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro71.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro87.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro112.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro127.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro139.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro141.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro147.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro163.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro172.png" alt="" className="hidden" />
+        <img src="/nfts/no-background/taro185.png" alt="" className="hidden" />
       </div>
     </div>
   );
