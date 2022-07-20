@@ -15,8 +15,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 
 import { SectionTitle } from "./SectionTitle";
+import { Router, useRouter } from "next/router";
 
 type RoadMapCardProps = {
+  expander: [string, Dispatch<SetStateAction<string>>];
   title: string;
   subtitle: string;
   img: string;
@@ -25,36 +27,39 @@ type RoadMapCardProps = {
 };
 
 const RoadMapCard: FC<RoadMapCardProps> = ({
+  expander,
   title,
   subtitle,
   img,
   description,
   checkpoints,
 }) => {
-  const [toggle, setToggle] = useState(true);
+  const router = useRouter();
+  const [expanded, setExpanded] = useState(false);
+  useEffect(() => {
+    if (expander[0] === title) setExpanded(true);
+    else if (expander[0] === '') setExpanded(false);
+  }, [expander[0]]);
 
   return (
-    <div
-      className="w-full flex items-center justify-center p-10 text-primary-content"
-      data-aos="fade-up"
-    >
+    <div className={`w-full items-center justify-center p-10 text-primary-content ${expander[0] === '' || expanded ? 'flex' : 'hidden'}`}>
       <div
         className={`${
-          toggle ? "w-96" : "w-full"
-        } transition-all duration-1000 p-5 flex flex-col justify-between items-center bg-green-700 bg-opacity-80 rounded-xl`}
+          expanded ? "w-2/3" : "w-96 h-80"
+        } p-5 flex flex-col justify-between items-center bg-green-700 bg-opacity-80 rounded-xl`}
       >
-        <div className="font-acme">
+        <div className="font-acme text-center">
           <h1 className="text-3xl font-bold">{title}</h1>
           <h2 className="text-md">{subtitle}</h2>
         </div>
 
         <div className="flex my-8">
-          {toggle ? (
+          {!expanded ? (
             <>
               <div className="w-1/3">
                 <img src={img} className="w-full" />
               </div>
-              <p className="w-2/3 font-bold">{description}</p>
+              <p className="w-2/3 font-bold m-3">{description}</p>
             </>
           ) : (
             <div className="flex flex-col">
@@ -83,10 +88,13 @@ const RoadMapCard: FC<RoadMapCardProps> = ({
         </div>
 
         <button
-          className={`btn ${toggle ? "" : "btn-success"}`}
-          onClick={() => setToggle(!toggle)}
+          className={`btn ${expanded ? "btn-success" : ""}`}
+          onClick={() => {
+            expander[1](expanded ? "" : title);
+            router.push('#roadmap');
+          }}
         >
-          {toggle ? "Learn More" : "Exit"}
+          {expanded ? "Exit" : "Learn More"}
         </button>
       </div>
     </div>
@@ -94,20 +102,17 @@ const RoadMapCard: FC<RoadMapCardProps> = ({
 };
 
 export const RoadmapSection: FC = () => {
+  const expander = useState('');
+
   return (
     <section
       id="roadmap"
-      className="py-32 flex flex-col items-center bg-carlos"
+      className="py-32 flex flex-col items-center bg-carlos bg-fixed"
     >
       <SectionTitle title="ROADMAP" />
-      <Carousel
-        showThumbs={false}
-        showStatus={false}
-        className="mt-20 w-full max-w-screen-md"
-        // autoPlay={true}
-        infiniteLoop={true}
-      >
+      <div className={`${expander[0] === '' ? 'grid' : ''} lg:grid-cols-2`}>
         <RoadMapCard
+          expander={expander}
           title="Stage I: Outbreak"
           subtitle="August/September 2022"
           img="/icon_Outbreak_resized.png"
@@ -163,6 +168,7 @@ export const RoadmapSection: FC = () => {
           ]}
         />
         <RoadMapCard
+          expander={expander}
           title="Stage II: Survival"
           subtitle="Anticipated Early 2023"
           img="/icon_Survive_resized.png"
@@ -195,6 +201,7 @@ export const RoadmapSection: FC = () => {
           ]}
         />
         <RoadMapCard
+          expander={expander}
           title="Stage III: Mutation"
           subtitle="TBD"
           img="/icon_Mutation_resized.png"
@@ -209,6 +216,7 @@ export const RoadmapSection: FC = () => {
           ]}
         />
         <RoadMapCard
+          expander={expander}
           title="Stage IV: ?"
           subtitle="???"
           img="/questionred.png"
@@ -222,7 +230,7 @@ export const RoadmapSection: FC = () => {
             },
           ]}
         />
-      </Carousel>
+      </div>
     </section>
   );
 };
