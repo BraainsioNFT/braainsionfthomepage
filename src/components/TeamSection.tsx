@@ -13,20 +13,8 @@ export const TeamSection: FC = () => {
           gradientColor={[17, 24, 39]}
           direction="left"
           className="mt-10"
-          pauseOnHover={true}
+          pauseOnHover={false}
         >
-          <TeamCard
-            name="Phantasma"
-            img="phantasma.png"
-            role="Game Dev"
-            description="NFT content appreciator."
-          />
-          <TeamCard
-            name="Cleito.art"
-            img="cleito.png"
-            role="Artist"
-            description="A Brazilian artist focused on the Pixel Art!"
-          />
           <TeamCard
             name="Qing Agar"
             img="qingagar.png"
@@ -38,6 +26,12 @@ export const TeamSection: FC = () => {
             img="adrastopoulous.png"
             role="Web Dev"
             description="Avid cryptologist and web developer."
+          />
+          <TeamCard
+            name="Stephistofeles"
+            img="stephistofeles.png"
+            role="Artist"
+            description=""
           />
           <TeamCard
             name="m0dE"
@@ -55,7 +49,7 @@ export const TeamSection: FC = () => {
             name="Erigato"
             img="erigato.gif"
             role="Advisor"
-            description="Game Dev working on Social #Solana Related Projects that involve multiple frens all interacting in a shared Experience."
+            description="Well-known Solana builder and staking specialist."
           />
         </Marquee>
       </div>
