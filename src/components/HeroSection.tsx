@@ -54,7 +54,7 @@ export const HeroSection: FC = () => {
               className="border-4 border-teal-800 w-44 bg-teal-900 rounded-full"
             />
             <div className="w-full flex flex-col items-center">
-              <h2 className="mt-5">Join the Braains Universe</h2>
+              <span className="mt-top-5 flex space-x-1"><h2>Join the Braains</h2><h2 className="text-purple-400"><b>Metaverse</b></h2></span>
               <button className="btn btn-success btn-outline w-3/4 mt-3 font-bold text-lg">
                 MINT
               </button>
